@@ -94,3 +94,13 @@ document.getElementById('show').innerHTML=editwords
 console.log(editwords);// do something with the text
 
 }
+
+
+document.getElementById("add")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+            document.getElementById("btn").click();
+        }
+
+});
