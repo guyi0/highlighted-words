@@ -47,7 +47,7 @@ document.getElementById("h1").innerHTML = string.join(" ")
 
 var editwords = words.sort().map(function(word){
 
-return  "<button  type='button'  class=' text-capitalize  btn btn-danger btn- xlg words'>" +"<strong>"+word+"</strong>"+"</button>"+"</div>"
+return  "<button  type='button'  class=' text-capitalize  btn btn-danger btn- xlg words wordButton'>" +"<strong>"+word+"</strong>"+"</button>"+"</div>"
 
 
 
@@ -67,7 +67,7 @@ return text !==word
     document.getElementById('show').innerHTML=""
     var editwords = words.sort().map(function(word){
 
-    return  "<button  type='button'  class=' text-capitalize  btn btn-danger btn- xlg words'>" +"<strong>"+word+"</strong>"+"</button>"+"</div>"
+    return  "<button  type='button'  class=' text-capitalize  btn btn-danger btn- xlg words wordButton'>" +"<strong>"+word+"</strong>"+"</button>"+"</div>"
 
 
 
@@ -76,3 +76,21 @@ return text !==word
     document.getElementById('show').innerHTML=editwords
     console.log(editwords);// do something with the text
 });
+
+
+function add() {
+var  addword = document.getElementById("add").value
+words.push(addword)
+document.getElementById('show').innerHTML=""
+var editwords = words.sort().map(function(word){
+
+return  "<button  type='button'  class=' text-capitalize  btn btn-danger btn- xlg words wordButton'>" +"<strong>"+word+"</strong>"+"</button>"+"</div>"
+
+
+
+})
+editwords= editwords.join("")
+document.getElementById('show').innerHTML=editwords
+console.log(editwords);// do something with the text
+
+}

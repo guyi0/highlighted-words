@@ -7,9 +7,14 @@
      margin:0 auto;
    }
 
+   .jumbotron{
+height: 25vh;
+
+   }
+
 #h1 {
 
-height: 5vh;
+height: 8vh;
 }
 #h1 span{
 text-align: center;
@@ -17,7 +22,7 @@ color: red;
 }
 
 .body {
-
+font-family: 'Hind', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,4 +37,9 @@ color: red;
 margin-right: 0.3%;
 margin-bottom:  0.3%;
 
+}
+
+textarea { font-size: 2vh; }
+.wordButton{
+  font-size: 2vh;
 }
